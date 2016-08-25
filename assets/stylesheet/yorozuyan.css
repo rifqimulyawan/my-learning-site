@@ -2,25 +2,14 @@
 	position: absolute;
 }
 
-#navigation, #bodycontent {
-	top: 6.30em;
-}
-
-#navigation {
-	width: 13%;
-	background-color: #7da5d8;
-	height: 100%;
-	background: #7da5d8;
-	text-align: left;
-}
-
 #bodycontent {
-	left: 14%;
+	margin-left: 200px;
+	float: right;
 }
 
-#header {
-	width: 100%;
+header {
 	border-top: 3px solid #7da5d8;
+	display:block; /* Only for IE8 or less */
 }
 
 body {
@@ -41,14 +30,39 @@ body {
 	background: #bed8f3 url(../images/tagline-fade.png) repeat-y right;
 }
 
-#site-nav {
-	font-style: italic;
-	font-family: Georgia, Times, serif;
-	display: inline;
+nav {
+	width: 180px;
+	height: 100%;
+	background: #7da5d8;
+	float: left;
+	padding-bottom: 100%;
+	display: block; /* Only for IE8 or less */
 }
 
-#navigation a {
+nav ul {
+	margin: 0;
+}
+
+nav a {
 	text-decoration: none;
+}
+
+aside {
+	display:block;
+	float:right;
+	margin:10px;
+	padding:10px;
+	width: 780px;
+	background:white;
+	font-style:italic;
+	color:gray;
+}
+aside blockquote {
+	font-size:1.2em;
+	line-height:1.4;
+	margin:0 0 0.5em 0;
+	font-style:normal;
+	color:#006;
 }
 
 h1 {
@@ -137,22 +151,26 @@ blockquote.fun {
 	margin: 10px;
 }
 
-.galleryphoto {
-	padding-bottom: 20px;
+figure {
+	display:block;
+	padding-bottom: 10px;
 	border-bottom: 1px solid navy;
-	margin-bottom: 10px;
+	margin-bottom: 20px;
 }
-
-.galleryphoto img {
-	border: 15px solid white;
-}
-
-.galleryphoto p {
+figcaption {
+	display:block;
 	font-size: 65%;
 	font-weight: bold;
 	margin-top: 0;
 	width: 430px;
 	line-height: 1.4em;
+}
+figcaption span {
+	font-weight: normal;
+	color: gray;
+}
+figure img {
+	border: 15px solid white;
 }
 
 .photocredit {
@@ -233,4 +251,10 @@ form.contact .buttonarea {
 	text-align: center;
 	padding: 4px;
 	background-color: #0066ff;
+}
+
+footer {
+	font-size: smaller;
+	border-top: 1px solid #ccc;
+	padding: 5px;
 }
