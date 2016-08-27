@@ -32,19 +32,21 @@ body {
 
 nav {
 	width: 180px;
-	height: 100%;
-	background: #7da5d8;
+	background: #7da5d8 url(../images/nav-bg.png) repeat-y;
 	float: left;
-	padding-bottom: 100%;
+	height: 876px;
 	display: block; /* Only for IE8 or less */
+	border-right: 3px solid #ccc;
 }
 
 nav ul {
-	margin: 0;
+	margin-top: 15px;
+	line-height: 2em;
 }
 
 nav a {
-	text-decoration: none;
+	text-shadow: 0px 1px 1px white, 0px 1px 1px white;
+	text-decoration:none
 }
 
 aside {
@@ -52,10 +54,13 @@ aside {
 	float:right;
 	margin:10px;
 	padding:10px;
-	width: 780px;
+	width: 480px;
 	background:white;
 	font-style:italic;
 	color:gray;
+	border:2px solid gray;
+	border-top-right-radius:20px;
+	border-bottom-left-radius:20px;
 }
 aside blockquote {
 	font-size:1.2em;
@@ -69,7 +74,7 @@ h1 {
 	font-family: "Trebuchet MS", Helvetica, Arial, sans-serif;
 	font-weight: bold;
 	font-size: x-large;
-	background-color: navy;
+	background-color: #0324AF;
 	color: white;
 	padding-top: 2em;
 	padding-bottom: .2em;
@@ -81,6 +86,7 @@ h2 {
 	font-size: medium;
 	font-weight: normal;
 	color: navy;
+	line-height:1;
 }
 
 li {
@@ -157,6 +163,7 @@ figure {
 	border-bottom: 1px solid navy;
 	margin-bottom: 20px;
 }
+
 figcaption {
 	display:block;
 	font-size: 65%;
@@ -165,14 +172,18 @@ figcaption {
 	width: 430px;
 	line-height: 1.4em;
 }
+
 figcaption span {
 	font-weight: normal;
 	color: gray;
 }
+
 figure img {
 	border: 15px solid white;
+	border-radius:10px;
+	box-shadow:2px 2px 5px gray;
 }
-
+ 
 .photocredit {
 	font-weight: normal;
 	color: gray;
@@ -203,7 +214,6 @@ table.events td {
 }
 
 table.events td:hover {
-	color: navy;
 	background-color: #ccc;
 }
 
@@ -257,4 +267,13 @@ footer {
 	font-size: smaller;
 	border-top: 1px solid #ccc;
 	padding: 5px;
+	margin-top: 30px;
+}
+
+#search {
+	position: absolute;
+	top: 77px;
+	right: 10px;
+	font-size: x-small;
+	font-weight: bold;
 }
